@@ -10,7 +10,7 @@ const [ready, setReady] = useState(null);
   // Create a reference to the worker object.
   const worker = useRef(null);
 
-  // We use the `useEffect` hook to set up the worker as soon as the `App` component is mounted.
+  // We use the `useEffect` hook to set up the worker as soon as the `App` component is mounted through use effect .
   useEffect(() => {
     if (!worker.current) {
       // Create the worker if it does not yet exist.
